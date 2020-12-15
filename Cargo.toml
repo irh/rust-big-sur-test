@@ -1,0 +1,5 @@
+[workspace]
+members = [
+  "testing",
+  "testing_api"
+]
