@@ -170,7 +170,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\nexport PATH=\"$HOME/.cargo/bin:$PATH\"\ncd ../\n\n# cargo lipo --xcode-integ --package testing_api\n\n";
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\nexport PATH=\"$HOME/.cargo/bin:$PATH\"\ncd ../\n\ncargo lipo --xcode-integ --package testing_api\n\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
