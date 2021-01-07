@@ -170,7 +170,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\nexport PATH=\"$HOME/.cargo/bin:$PATH\"\ncd ../\n\ncargo lipo --xcode-integ --package testing_api\n\n";
+			shellScript = "SDKROOT=`xcrun --show-sdk-path`\n# Commenting out the following line causes the build to fail on Big Sur\nexport LIBRARY_PATH=\"$SDKROOT/usr/lib\"\n\nexport PATH=\"$HOME/.cargo/bin:$PATH\"\ncd ../\n\ncargo lipo --xcode-integ --package testing_api\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
