@@ -2,6 +2,6 @@
 
 This repo contains a minimal iOS test app that links against a Rust library.
 
-`cargo-lipo` is used in an Xcode build script to build libraries for the active targets, but when compiling on Big Sur it runs into linker errors.
+The Rust library is built in a build script in the Xcode project found in `big-sur-test/`.
+Without a workaround in place building the Rust library fails on Big Sur due to the removal of system libraries in `/usr/lib`.
 
-It looks like the dynamic library cache introduced in Big Sur is the underlying issue, but I haven't found a solution so far.
