@@ -170,7 +170,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "SDKROOT=`xcrun --show-sdk-path`\n# Commenting out the following line causes the build to fail on Big Sur\nexport LIBRARY_PATH=\"$SDKROOT/usr/lib\"\n\nexport PATH=\"$HOME/.cargo/bin:$PATH\"\ncd ../\n\ncargo lipo --xcode-integ --package testing_api\n";
+			shellScript = "./rust-build-script.sh\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 

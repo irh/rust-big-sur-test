@@ -8,6 +8,8 @@
 #ifndef api_bridge_h
 #define api_bridge_h
 
+#import <Foundation/Foundation.h>
+
 uint64_t test_function(uint64_t x, uint64_t y);
 
 #endif /* api_bridge_h */
